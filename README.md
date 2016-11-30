@@ -1,13 +1,13 @@
 # easydst
 a simple docker container controller for manage DST gameserver
 ## usage
-1.you need a [ÍøÒ×·ä³²](https://c.163.com/) account and an avaliable accesskey
-2.create your own image named &lt;somename&gt;
-3.use that key to generate a token:  
+1. you need a [ÍøÒ×·ä³²](https://c.163.com/) account and an avaliable accesskey
+2. create your own image named &lt;somename&gt;
+3. use that key to generate a token:  
 
     curl https://open.c.163.com/api/v1/token -H"Content-Type: application/json" -d'{"app_key":"your key","app_secret":"your secret"}'
 
-4.modify easydst.json:
+4. modify easydst.json:
 
     {
     "ver": 0,                         //no use yet, but you can set it to anything interesting
@@ -31,7 +31,7 @@ and easydst.py:
     str_ver=__version__     #__version__ is a good choice, yep?
     int_ver=0               #no use yet, but you can set it to anything interesting
     cfg_path="easydst.json" #conf file path
-5.use easydst.py or easydst_gui.py to manage containers:
+5. use easydst.py or easydst_gui.py to manage containers:
 
     python easydst.py token <sometoken>
     python easydst.py list
@@ -41,7 +41,7 @@ and easydst.py:
     
     python easydst_gui.py
 
-6.if you like, you can use pyinstaller to pack that prog and share with you friends
+6. if you like, you can use pyinstaller to pack that prog and share with you friends
 
     pyinstaller sgeasydst_gui.spec
 
